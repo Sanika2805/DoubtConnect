@@ -1,0 +1,377 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home-section,
+#questions-section,
+#about-section {
+  scroll-margin-top: 70px;
+}
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  min-height: 100vh;
+  background: #f8f7ff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 70px;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8%;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #5b4bdb;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #444;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #5b4bdb;
+}
+
+.login-nav-button {
+  background: #5b4bdb;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 22px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.login-nav-button:hover {
+  background: #4939c5;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  min-height: 480px;
+
+  padding: 80px 8%;
+
+  background: linear-gradient(
+    135deg,
+    #eeeaff,
+    #f8f7ff
+  );
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+
+  line-height: 1.2;
+
+  color: #29235c;
+
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #666;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  max-width: 650px;
+
+  margin: 0 auto;
+}
+
+.hero-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 13px 24px;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #5b4bdb;
+
+  color: white;
+
+  border: 2px solid #5b4bdb;
+}
+
+.primary-btn:hover {
+  background: #4939c5;
+}
+
+.secondary-btn {
+  background: white;
+
+  color: #5b4bdb;
+
+  border: 2px solid #5b4bdb;
+}
+
+.secondary-btn:hover {
+  background: #f0eeff;
+}
+
+
+/* =========================
+   RECENT QUESTIONS
+========================= */
+
+.questions-section {
+  padding: 65px 8%;
+
+  background: white;
+}
+
+.questions-section h2,
+.how-section h2 {
+  text-align: center;
+
+  color: #29235c;
+
+  font-size: 30px;
+
+  margin-bottom: 35px;
+}
+
+.question-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.question-card {
+  padding: 25px;
+
+  border: 1px solid #e5e2f5;
+
+  border-radius: 12px;
+
+  background: #faf9ff;
+}
+
+.question-card span {
+  color: #5b4bdb;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+.question-card h3 {
+  color: #29235c;
+
+  margin: 15px 0 10px;
+}
+
+.question-card p {
+  color: #777;
+
+  font-size: 14px;
+
+  margin-bottom: 10px;
+}
+
+.question-card strong {
+  color: #5b4bdb;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-section {
+  padding: 65px 8%;
+
+  background: #f8f7ff;
+}
+
+.how-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.how-card {
+  background: white;
+
+  padding: 30px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.how-card h3 {
+  color: #5b4bdb;
+
+  font-size: 21px;
+
+  margin-bottom: 10px;
+}
+
+.how-card p {
+  color: #777;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #29235c;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .question-cards,
+  .how-cards {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .navbar {
+    height: auto;
+
+    padding: 18px 5%;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .hero-section {
+    padding: 60px 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 200px;
+  }
+
+}

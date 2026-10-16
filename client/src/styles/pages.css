@@ -1,0 +1,172 @@
+/* Extra styles for the pages that were added when the backend was built.
+   Uses the same purple theme as the rest of the app. */
+
+a.sidebar-item { text-decoration: none; }
+.sidebar-item { cursor: pointer; }
+
+.loading-box,
+.empty-box {
+  background: white;
+  border: 1px dashed #d8d3f0;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  color: #777;
+  margin-bottom: 15px;
+}
+.loading-box { margin: 80px auto; max-width: 300px; }
+.home-note { text-align: center; color: #777; padding: 20px; }
+
+.page-head { margin-bottom: 25px; }
+.page-eyebrow { color: #5b4bdb; font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+.page-head h1 { color: #29235c; font-size: 30px; }
+
+/* stats on dashboard */
+.stats-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+.stat-card {
+  flex: 1;
+  min-width: 140px;
+  background: white;
+  border: 1px solid #e6e3f1;
+  border-radius: 12px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+}
+.stat-card strong { font-size: 30px; color: #5b4bdb; }
+.stat-card span { color: #777; font-size: 14px; margin-top: 3px; }
+
+/* questions toolbar */
+.toolbar { display: flex; gap: 12px; margin-bottom: 22px; flex-wrap: wrap; }
+.toolbar input,
+.toolbar select {
+  padding: 12px 14px;
+  border: 1px solid #e5e2f1;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+  outline: none;
+}
+.toolbar input { flex: 1; min-width: 200px; }
+.toolbar input:focus,
+.toolbar select:focus { border-color: #5b4bdb; }
+
+/* status badge */
+.status-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.status-badge.solved { background: #e3f6e8; color: #1e7e3e; }
+.status-badge.unsolved { background: #fff1de; color: #b36a00; }
+
+/* small buttons */
+.small-btn,
+.primary-small {
+  border: none;
+  border-radius: 7px;
+  padding: 9px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.primary-small { background: #5b4bdb; color: white; }
+.primary-small:hover { background: #4a3bc2; }
+.primary-small:disabled { opacity: 0.6; cursor: not-allowed; }
+.small-btn { background: #eeeaff; color: #5b4bdb; }
+.small-btn.ghost { background: transparent; border: 1px solid #d8d3f0; margin: 0 0 15px; }
+.small-btn.danger { background: #fdecea; color: #d93025; }
+.small-btn.danger:hover { background: #fadbd8; }
+.push-right { margin: 0 0 0 auto; }
+
+.form-error { color: #d93025; font-size: 14px; margin: 10px 0; }
+.form-success { color: #1e7e3e; font-size: 14px; margin-top: 12px; }
+
+/* question detail */
+.qd-card {
+  background: white;
+  border: 1px solid #e6e3f1;
+  border-radius: 12px;
+  padding: 26px 28px;
+  margin-bottom: 25px;
+}
+.qd-title { color: #29235c; font-size: 26px; margin: 12px 0 8px; }
+.qd-meta { color: #777; font-size: 14px; margin-bottom: 16px; }
+.qd-desc { color: #444; line-height: 1.7; white-space: pre-wrap; }
+.qd-answers-title { color: #29235c; font-size: 20px; margin-bottom: 14px; }
+
+.answer-card {
+  background: white;
+  border: 1px solid #e6e3f1;
+  border-left: 4px solid #5b4bdb;
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+}
+.answer-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.answer-top strong { display: block; color: #29235c; }
+.answer-date { color: #999; font-size: 13px; }
+.answer-avatar,
+.profile-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #5b4bdb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.answer-card p { color: #444; line-height: 1.6; white-space: pre-wrap; }
+
+.answer-form {
+  background: white;
+  border: 1px solid #e6e3f1;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-top: 25px;
+}
+.answer-form h3 { color: #29235c; margin-bottom: 12px; }
+.answer-form textarea,
+.profile-details input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e5e2f1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+.answer-form textarea { resize: vertical; }
+.answer-form textarea:focus,
+.profile-details input:focus { border-color: #5b4bdb; }
+
+/* profile */
+.profile-card {
+  background: white;
+  border: 1px solid #e6e3f1;
+  border-radius: 12px;
+  padding: 28px;
+  max-width: 560px;
+}
+.profile-avatar { width: 70px; height: 70px; font-size: 28px; margin-bottom: 20px; }
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0;
+  border-bottom: 1px solid #f0eef8;
+}
+.profile-row span { color: #777; }
+.profile-row strong { color: #29235c; }
+.pf-label { display: block; margin: 14px 0 6px; font-size: 14px; color: #444; }
+.pf-actions { display: flex; gap: 10px; margin-top: 10px; }
+.pf-actions .small-btn { margin-top: 10px; }

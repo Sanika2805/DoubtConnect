@@ -1,0 +1,177 @@
+
+.register-page {
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #eeeaff,
+    #f8f7ff
+  );
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+}
+
+
+
+.register-card {
+  width: 400px;
+
+  max-width: 100%;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+
+.register-card h1 {
+  text-align: center;
+
+  color: #5b4bdb;
+
+  font-size: 26px;
+
+  margin-bottom: 25px;
+}
+
+.register-card h2 {
+  text-align: center;
+
+  color: #29235c;
+
+  margin-bottom: 8px;
+}
+
+.register-subtitle {
+  text-align: center;
+
+  color: #777;
+
+  font-size: 14px;
+
+  margin-bottom: 28px;
+}
+
+
+
+.register-card form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.register-card label {
+  font-size: 14px;
+
+  font-weight: bold;
+
+  color: #444;
+
+  margin-bottom: 7px;
+}
+
+.register-card input {
+  padding: 12px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  margin-bottom: 18px;
+
+  outline: none;
+}
+
+.register-card input:focus {
+  border-color: #5b4bdb;
+}
+
+
+/* =========================
+   CREATE ACCOUNT BUTTON
+========================= */
+
+.register-card form button {
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #5b4bdb;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  margin-top: 5px;
+}
+
+.register-card form button:hover {
+  background: #4939c5;
+}
+
+
+
+.register-bottom {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 22px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+.text-link {
+  color: #5b4bdb;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.back-link {
+  text-align: center;
+
+  margin-top: 18px;
+
+  color: #666;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.back-link:hover {
+  color: #5b4bdb;
+}
